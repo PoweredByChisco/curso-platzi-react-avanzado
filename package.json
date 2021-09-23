@@ -1,13 +1,18 @@
 {
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.2",
+    "standard": "^16.0.3",
     "webpack": "^5.53.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.2.1",
     "wepack-cli": "^0.0.1-security"
   },
   "name": "curso-platzi-react-avanzado",
-  "description": "**¡Sígueme en Youtube para más contenido de React y Javascript!** 👉 https://www.youtube.com/midudev",
+  "description": "",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -46,6 +51,8 @@
     "p-limit": "^3.1.0",
     "punycode": "^2.1.1",
     "randombytes": "^2.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "safe-buffer": "^5.2.1",
     "schema-utils": "^3.1.1",
     "serialize-javascript": "^6.0.0",
@@ -60,10 +67,20 @@
     "webpack-sources": "^3.2.1",
     "yocto-queue": "^0.1.0"
   },
+  "standard": {
+	"ignore": [
+	  "/api/**"
+	]
+  },
+  "eslintConfig": {
+      "extends" : ["./node_modules/standard/eslintrc.json"]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve --mode development --env development",
-    "build": "webpack"
+    "dev": "webpack serve --mode development --env development --open",
+    "build": "webpack",
+    "lint": "standard",
+    "vercel-build": "npm run build"
   },
   "repository": {
     "type": "git",
