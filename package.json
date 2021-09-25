@@ -58,6 +58,7 @@
     "serialize-javascript": "^6.0.0",
     "source-map": "^0.6.1",
     "source-map-support": "^0.5.20",
+    "styled-components": "^5.3.1",
     "supports-color": "^8.1.1",
     "tapable": "^2.2.1",
     "terser": "^5.9.0",
@@ -68,12 +69,14 @@
     "yocto-queue": "^0.1.0"
   },
   "standard": {
-	"ignore": [
-	  "/api/**"
-	]
+    "ignore": [
+      "/api/**"
+    ]
   },
   "eslintConfig": {
-      "extends" : ["./node_modules/standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
