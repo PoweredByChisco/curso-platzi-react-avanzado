@@ -80,7 +80,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve --mode development --env development --open",
+    "start": "webpack serve --mode development --env development --open",
     "build": "webpack",
     "lint": "standard",
     "vercel-build": "npm run build"
