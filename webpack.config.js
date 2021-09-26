@@ -1,14 +1,14 @@
 // webpack.config.js
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   output: {
-    filename: "app.bundle.js",
+    filename: 'app.bundle.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "public/index.html",
-    }),
+      template: 'public/index.html'
+    })
   ],
   module: {
     rules: [
@@ -16,12 +16,12 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-          },
-        },
-      },
-    ],
-  },
-};
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      }
+    ]
+  }
+}
