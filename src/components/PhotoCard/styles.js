@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components'
+import styled from 'styled-components'
 import { fadeIn } from '../../styles/animation'
 
 export const Article = styled.article`

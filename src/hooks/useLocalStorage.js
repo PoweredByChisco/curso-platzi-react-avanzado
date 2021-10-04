@@ -12,7 +12,7 @@ export const useLocalStorage = (key, initialValue) => {
 
   const setLocalStorage = value => {
     try {
-      window.localStorage.setItem(key, JSON.stringify(value))
+      window.localStorage.setItem(key, JSON.stringify(value)) /* The stringigy is unnecessary, setItem by default convert the value in a string */
       setValue(value)
     } catch (err) { /* If the navegator is in private mode, you will catch the error cause in that mode your don't have LocalStorage */
       console.error(err)

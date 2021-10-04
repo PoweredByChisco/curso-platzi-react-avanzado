@@ -1,10 +1,12 @@
 import React from 'react'
 import { PhotoCard } from '../PhotoCard'
 
-export const ListOfPhotoCards = () => {
+export const ListOfPhotoCardsComponent = (props) => {
+  const { data: { photos = [] } } = props
   return (
     <ul>
-      {[1, 2, 3, 4, 5].map(item => <PhotoCard key={item} id={item} />)}
+      {photos.map(item => <PhotoCard key={item.id} {...item} />)}
     </ul>
   )
 }
+/* This pattern is a higher-order component  */
