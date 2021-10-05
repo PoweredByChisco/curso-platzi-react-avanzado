@@ -4,6 +4,7 @@ import { ListOfCategories } from './components/ListOfCategories'
 import { GlobalStyle } from './styles/globalStyle'
 import { ListOfPhotoCards } from './container/ListOfPhotoCards'
 import { Logo } from './components/Logo'
+import { PhotoCardWithQuery } from './container/PhotoCardWithQuery'
 
 export const App =
   () => {
@@ -16,7 +17,7 @@ export const App =
         <Logo />
         {
           detailId
-            ? <h1> Detail Id {detailId}</h1>
+            ? <PhotoCardWithQuery id={detailId} />
             : <>
               <ListOfCategories />
               <ListOfPhotoCards categoryId={6} />
