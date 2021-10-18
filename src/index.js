@@ -5,7 +5,7 @@ import { App } from './App'
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 
-const client = new ApolloClient({
+export const client = new ApolloClient({
   uri: 'https://petgram-server-fco.vercel.app/graphql',
   request: operation => {
     const token = window.sessionStorage.getItem('token')
