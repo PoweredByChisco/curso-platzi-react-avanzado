@@ -89,7 +89,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --env development --open --history-api-fallback",
-    "build": "webpack",
+    "build": "webpack --mode development",
+    "start:dev": "npx serve dist -s",
+    "serve:dev": "npm run build && npm run start:dev",
     "lint": "standard",
     "vercel-build": "npm run build"
   },
