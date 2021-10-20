@@ -11,7 +11,8 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.2.1",
     "webpack-pwa-manifest": "^4.3.0",
-    "wepack-cli": "^0.0.1-security"
+    "wepack-cli": "^0.0.1-security",
+    "workbox-webpack-plugin": "^6.3.0"
   },
   "name": "curso-platzi-react-avanzado",
   "description": "",
