@@ -1,6 +1,4 @@
 {
-    "version" : 2,
-    "name": "petgram-fco",
     "builds": [
         {"use": "@vercel/static-build",
         "src": "package.json"}
