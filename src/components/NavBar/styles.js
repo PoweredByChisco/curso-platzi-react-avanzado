@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   justify-content: space-around;
   left: 0;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 1000px;
   position: fixed;
   right: 0;
   width: 100%;

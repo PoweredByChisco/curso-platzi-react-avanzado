@@ -1,6 +1,4 @@
 {
-  "version": 2,
-  "name": "petgram-server-fco",
   "alias": ["petgram-api-fco"],
   "builds": [{ "src": "index.js", "use": "@now/node" }],
   "routes": [{

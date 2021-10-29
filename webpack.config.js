@@ -27,6 +27,7 @@ module.exports = {
       ]
     }),
     new WorkBoxWebpackPlugin.GenerateSW({
+      maximumFileSizeToCacheInBytes: 5000000,
       runtimeCaching: [
         {
           // eslint-disable-next-line prefer-regex-literals
